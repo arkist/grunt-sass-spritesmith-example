@@ -1,0 +1,11 @@
+{
+  "name": "grunt-test",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-sass": "~0.9.0",
+    "pngsmith": "~0.1.0",
+    "grunt-spritesmith": "~1.21.0"
+  }
+}

@@ -1,0 +1,13 @@
+@import "base/reset";
+@import "sprite/sprite"; // 일반 스프라이트
+@import "sprite/sprite2x"; // 레티나용 스프라이트
+
+$red: #f00;
+
+%hello {
+  background-color: $red;
+}
+
+.hello {
+  @extend %hello;
+}

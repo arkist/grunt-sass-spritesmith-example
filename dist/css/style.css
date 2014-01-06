@@ -1,0 +1,52 @@
+body {
+  background-color: white; }
+
+.sprite-beachchair, .sprite-cocktail, .sprite-flip_flops {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../images/sprite-1389009076679.png);
+  background-repeat: no-repeat; }
+
+.sprite-beachchair {
+  background-position: 0px 0px;
+  width: 256px;
+  height: 256px; }
+
+.sprite-cocktail {
+  background-position: -258px 0px;
+  width: 256px;
+  height: 256px; }
+
+.sprite-flip_flops {
+  background-position: 0px -258px;
+  width: 256px;
+  height: 256px; }
+
+.sprite2x-beachchair, .sprite2x-cocktail, .sprite2x-flip_flops {
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../images/sprite2x-1389009076679.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: 257px 257px;
+  -moz-background-size: 257px 257px;
+  -o-background-size: 257px 257px;
+  background-size: 257px 257px; }
+
+.sprite2x-beachchair {
+  background-position: 0px 0px;
+  width: 128px;
+  height: 128px; }
+
+.sprite2x-cocktail {
+  background-position: -129px 0px;
+  width: 128px;
+  height: 128px; }
+
+.sprite2x-flip_flops {
+  background-position: 0px -129px;
+  width: 128px;
+  height: 128px; }
+
+.hello {
+  background-color: red; }
+
