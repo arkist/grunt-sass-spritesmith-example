@@ -1,4 +1,4 @@
 default:
   - 'concurrent:sprite'
-  - 'sass'
+  - 'sass:dev'
   - 'notify:sprite'

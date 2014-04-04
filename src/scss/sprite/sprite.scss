@@ -1,7 +1,7 @@
   %sprite-image {
     display: inline-block;
     vertical-align: middle;
-    background-image: url(../images/sprite-1396492779511.png);
+    background-image: url(../images/sprite-2014-04-04-10-58-39.png);
     background-repeat: no-repeat;
   }
 
@@ -31,19 +31,15 @@
     @include sprite-height($sprite);
   }
 
-  $sprite-file-2: 642px 0px -642px 0px 640px 1136px 1924px 1287px '../images/sprite-1396492779511.png';
-  .sprite-file-2 {
-    @include sprite($sprite-file-2);
+  $sprite-icon-delete: 0px 0px 0px 0px 640px 1137px 1924px 1137px '../images/sprite-2014-04-04-10-58-39.png';
+  .sprite-icon-delete {
+    @include sprite($sprite-icon-delete);
   }
-  $sprite-icon-paste: 1284px 0px -1284px 0px 640px 1136px 1924px 1287px '../images/sprite-1396492779511.png';
-  .sprite-icon-paste {
-    @include sprite($sprite-icon-paste);
+  $sprite-icon-minus: 642px 0px -642px 0px 640px 1136px 1924px 1137px '../images/sprite-2014-04-04-10-58-39.png';
+  .sprite-icon-minus {
+    @include sprite($sprite-icon-minus);
   }
-  $sprite-icon-writee: 0px 0px 0px 0px 640px 1137px 1924px 1287px '../images/sprite-1396492779511.png';
-  .sprite-icon-writee {
-    @include sprite($sprite-icon-writee);
-  }
-  $sprite-ios_PDP_640_@2x: 0px 1139px 0px -1139px 168px 148px 1924px 1287px '../images/sprite-1396492779511.png';
-  .sprite-ios_PDP_640_@2x {
-    @include sprite($sprite-ios_PDP_640_@2x);
+  $sprite-icon-plus: 1284px 0px -1284px 0px 640px 1136px 1924px 1137px '../images/sprite-2014-04-04-10-58-39.png';
+  .sprite-icon-plus {
+    @include sprite($sprite-icon-plus);
   }

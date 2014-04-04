@@ -10,7 +10,7 @@
     $sprite-total-height: 1137px;
     display: inline-block;
     vertical-align: middle;
-    background-image: url(../images/sprite2x-1396492779509.png);
+    background-image: url(../images/sprite2x-2014-04-04-10-58-39.png);
     background-repeat: no-repeat;
     @include background-size($sprite-total-width/2, $sprite-total-height/2);
   }
@@ -38,15 +38,15 @@
     @include sprite-height($sprite);
   }
 
-  $sprite2x-file-1: 642px 0px -642px 0px 640px 1136px 1924px 1137px '../images/sprite2x-1396492779509.png';
-  .sprite2x-file-1 {
-    @include sprite($sprite2x-file-1);
+  $sprite2x-icon-delete: 0px 0px 0px 0px 640px 1137px 1924px 1137px '../images/sprite2x-2014-04-04-10-58-39.png';
+  .sprite2x-icon-delete {
+    @include sprite($sprite2x-icon-delete);
   }
-  $sprite2x-file-2: 1284px 0px -1284px 0px 640px 1136px 1924px 1137px '../images/sprite2x-1396492779509.png';
-  .sprite2x-file-2 {
-    @include sprite($sprite2x-file-2);
+  $sprite2x-icon-minus: 642px 0px -642px 0px 640px 1136px 1924px 1137px '../images/sprite2x-2014-04-04-10-58-39.png';
+  .sprite2x-icon-minus {
+    @include sprite($sprite2x-icon-minus);
   }
-  $sprite2x-file-3: 0px 0px 0px 0px 640px 1137px 1924px 1137px '../images/sprite2x-1396492779509.png';
-  .sprite2x-file-3 {
-    @include sprite($sprite2x-file-3);
+  $sprite2x-icon-plus: 1284px 0px -1284px 0px 640px 1136px 1924px 1137px '../images/sprite2x-2014-04-04-10-58-39.png';
+  .sprite2x-icon-plus {
+    @include sprite($sprite2x-icon-plus);
   }

@@ -4,7 +4,7 @@ module.exports = {
 };
 
 function spriteConfig(target) {
-  var timestamp = new Date().getTime();
+  var timestamp = getTime();
   var distFileName = target+'-'+timestamp;
 
   return {
@@ -21,4 +21,13 @@ function spriteConfig(target) {
     src: 'src/images/'+target+'/*.png',
     destImg: 'dist/images/sprite/'+distFileName+'.png'
   };
+}
+
+function getTime() {
+  var date = new Date();
+  var day = date.toISOString().split('T')[0];
+  var time = date.toTimeString().split(' ')[0].replace(/:/g, '-');
+  var timeString = day+'-'+time;
+
+  return timeString;
 }
