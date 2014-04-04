@@ -1,0 +1,52 @@
+@mixin background-size($width, $height) {
+  -webkit-background-size: $width $height;
+  -moz-background-size: $width $height;
+  -o-background-size: $width $height;
+  background-size: $width $height;
+}
+
+  %sprite2x-image {
+    $sprite-total-width: 1924px;
+    $sprite-total-height: 1137px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(../images/sprite2x-1396492779509.png);
+    background-repeat: no-repeat;
+    @include background-size($sprite-total-width/2, $sprite-total-height/2);
+  }
+
+  @mixin sprite-width($sprite) {
+    $sprite-width: nth($sprite, 5);
+    width: $sprite-width/2;
+  }
+
+  @mixin sprite-height($sprite) {
+    $sprite-height: nth($sprite, 6);
+    height: $sprite-height/2;
+  }
+
+  @mixin sprite-position($sprite) {
+    $sprite-offset-x: nth($sprite, 3);
+    $sprite-offset-y: nth($sprite, 4);
+    background-position: $sprite-offset-x/2  $sprite-offset-y/2;  
+  }
+
+  @mixin sprite($sprite) {
+    @extend %sprite2x-image;
+    @include sprite-position($sprite);
+    @include sprite-width($sprite);
+    @include sprite-height($sprite);
+  }
+
+  $sprite2x-file-1: 642px 0px -642px 0px 640px 1136px 1924px 1137px '../images/sprite2x-1396492779509.png';
+  .sprite2x-file-1 {
+    @include sprite($sprite2x-file-1);
+  }
+  $sprite2x-file-2: 1284px 0px -1284px 0px 640px 1136px 1924px 1137px '../images/sprite2x-1396492779509.png';
+  .sprite2x-file-2 {
+    @include sprite($sprite2x-file-2);
+  }
+  $sprite2x-file-3: 0px 0px 0px 0px 640px 1137px 1924px 1137px '../images/sprite2x-1396492779509.png';
+  .sprite2x-file-3 {
+    @include sprite($sprite2x-file-3);
+  }

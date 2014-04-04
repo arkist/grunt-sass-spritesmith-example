@@ -1,0 +1,49 @@
+  %sprite-image {
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(../images/sprite-1396492779511.png);
+    background-repeat: no-repeat;
+  }
+
+  @mixin sprite-width($sprite) {
+    width: nth($sprite, 5);
+  }
+
+  @mixin sprite-height($sprite) {
+    height: nth($sprite, 6);
+  }
+
+  @mixin sprite-position($sprite) {
+    $sprite-offset-x: nth($sprite, 3);
+    $sprite-offset-y: nth($sprite, 4);
+    background-position: $sprite-offset-x  $sprite-offset-y;
+  }
+
+  @mixin sprite-image($sprite) {
+    $sprite-image: nth($sprite, 9);
+    background-image: url(#{$sprite-image});
+  }
+
+  @mixin sprite($sprite) {
+    @extend %sprite-image;
+    @include sprite-position($sprite);
+    @include sprite-width($sprite);
+    @include sprite-height($sprite);
+  }
+
+  $sprite-file-2: 642px 0px -642px 0px 640px 1136px 1924px 1287px '../images/sprite-1396492779511.png';
+  .sprite-file-2 {
+    @include sprite($sprite-file-2);
+  }
+  $sprite-icon-paste: 1284px 0px -1284px 0px 640px 1136px 1924px 1287px '../images/sprite-1396492779511.png';
+  .sprite-icon-paste {
+    @include sprite($sprite-icon-paste);
+  }
+  $sprite-icon-writee: 0px 0px 0px 0px 640px 1137px 1924px 1287px '../images/sprite-1396492779511.png';
+  .sprite-icon-writee {
+    @include sprite($sprite-icon-writee);
+  }
+  $sprite-ios_PDP_640_@2x: 0px 1139px 0px -1139px 168px 148px 1924px 1287px '../images/sprite-1396492779511.png';
+  .sprite-ios_PDP_640_@2x {
+    @include sprite($sprite-ios_PDP_640_@2x);
+  }
