@@ -1,10 +1,10 @@
 body {
-  background-color: white; }
+  background-color: #fff; }
 
 .sprite-beachchair, .sprite-cocktail, .sprite-flip_flops {
   display: inline-block;
   vertical-align: middle;
-  background-image: url(../images/sprite-1389009076679.png);
+  background-image: url(../images/sprite-1419585045847.png);
   background-repeat: no-repeat; }
 
 .sprite-beachchair {
@@ -13,24 +13,24 @@ body {
   height: 256px; }
 
 .sprite-cocktail {
-  background-position: -258px 0px;
+  background-position: -256px 0px;
   width: 256px;
   height: 256px; }
 
 .sprite-flip_flops {
-  background-position: 0px -258px;
+  background-position: 0px -256px;
   width: 256px;
   height: 256px; }
 
 .sprite2x-beachchair, .sprite2x-cocktail, .sprite2x-flip_flops {
   display: inline-block;
   vertical-align: middle;
-  background-image: url(../images/sprite2x-1389009076679.png);
+  background-image: url(../images/sprite2x-1419585045847.png);
   background-repeat: no-repeat;
-  -webkit-background-size: 257px 257px;
-  -moz-background-size: 257px 257px;
-  -o-background-size: 257px 257px;
-  background-size: 257px 257px; }
+  -webkit-background-size: 256px 256px;
+  -moz-background-size: 256px 256px;
+  -o-background-size: 256px 256px;
+  background-size: 256px 256px; }
 
 .sprite2x-beachchair {
   background-position: 0px 0px;
@@ -38,15 +38,15 @@ body {
   height: 128px; }
 
 .sprite2x-cocktail {
-  background-position: -129px 0px;
+  background-position: -128px 0px;
   width: 128px;
   height: 128px; }
 
 .sprite2x-flip_flops {
-  background-position: 0px -129px;
+  background-position: 0px -128px;
   width: 128px;
   height: 128px; }
 
 .hello {
-  background-color: red; }
+  background-color: #f00; }
 

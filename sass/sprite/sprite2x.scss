@@ -6,11 +6,11 @@
 }
 
   %sprite2x-image {
-    $sprite-total-width: 514px;
-    $sprite-total-height: 514px;
+    $sprite-total-width: 512px;
+    $sprite-total-height: 512px;
     display: inline-block;
     vertical-align: middle;
-    background-image: url(../images/sprite2x-1389009076679.png);
+    background-image: url(../images/sprite2x-1419585045847.png);
     background-repeat: no-repeat;
     @include background-size($sprite-total-width/2, $sprite-total-height/2);
   }
@@ -38,15 +38,15 @@
     @include sprite-height($sprite);
   }
 
-  $sprite2x-beachchair: 0px 0px 0px 0px 256px 256px 514px 514px '../images/sprite2x-1389009076679.png';
+  $sprite2x-beachchair: 0px 0px 0px 0px 256px 256px 512px 512px '../images/sprite2x-1419585045847.png';
   .sprite2x-beachchair {
     @include sprite($sprite2x-beachchair);
   }
-  $sprite2x-cocktail: 258px 0px -258px 0px 256px 256px 514px 514px '../images/sprite2x-1389009076679.png';
+  $sprite2x-cocktail: 256px 0px -256px 0px 256px 256px 512px 512px '../images/sprite2x-1419585045847.png';
   .sprite2x-cocktail {
     @include sprite($sprite2x-cocktail);
   }
-  $sprite2x-flip_flops: 0px 258px 0px -258px 256px 256px 514px 514px '../images/sprite2x-1389009076679.png';
+  $sprite2x-flip_flops: 0px 256px 0px -256px 256px 256px 512px 512px '../images/sprite2x-1419585045847.png';
   .sprite2x-flip_flops {
     @include sprite($sprite2x-flip_flops);
   }

@@ -1,14 +1,8 @@
 module.exports = function(grunt) {
-  var spriteConfig = require('./spriteConfig.js');
+  var spriteConfig = require('./sprite.config.js');
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    watch: {
-      sass: {
-        files: ['sass/**/*.{scss,sass}'],
-        tasks: ['sass:dev']
-      }
-    },
     sass: {
       dist: {
         options: {
@@ -35,7 +29,6 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-spritesmith');
 
