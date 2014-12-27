@@ -32,7 +32,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-spritesmith');
 
-  // spritesmith는 async로 동작하기 때문에 걱정없다
   grunt.registerTask('dev', ['sprite', 'sass:dev']);
   grunt.registerTask('dist', ['sprite', 'sass:dist']);
 }
