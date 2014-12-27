@@ -1,52 +1,59 @@
 @mixin background-size($width, $height) {
   -webkit-background-size: $width $height;
   -moz-background-size: $width $height;
-  -o-background-size: $width $height;
   background-size: $width $height;
 }
 
-  %sprite2x-image {
-    $sprite-total-width: 512px;
-    $sprite-total-height: 512px;
-    display: inline-block;
-    vertical-align: middle;
-    background-image: url(../images/sprite2x-1419585045847.png);
-    background-repeat: no-repeat;
-    @include background-size($sprite-total-width/2, $sprite-total-height/2);
-  }
+%sprite2x-image {
+  $sprite-total-width: 512px;
+  $sprite-total-height: 512px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../images/sprite2x-1419683254499.png);
+  background-repeat: no-repeat;
+  @include background-size($sprite-total-width/2, $sprite-total-height/2);
+}
 
-  @mixin sprite-width($sprite) {
-    $sprite-width: nth($sprite, 5);
-    width: $sprite-width/2;
-  }
+@mixin sprite-width($sprite) {
+  $sprite-width: nth($sprite, 5);
+  width: $sprite-width/2;
+}
 
-  @mixin sprite-height($sprite) {
-    $sprite-height: nth($sprite, 6);
-    height: $sprite-height/2;
-  }
+@mixin sprite-height($sprite) {
+  $sprite-height: nth($sprite, 6);
+  height: $sprite-height/2;
+}
 
-  @mixin sprite-position($sprite) {
-    $sprite-offset-x: nth($sprite, 3);
-    $sprite-offset-y: nth($sprite, 4);
-    background-position: $sprite-offset-x/2  $sprite-offset-y/2;  
-  }
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x/2  $sprite-offset-y/2;  
+}
 
-  @mixin sprite($sprite) {
-    @extend %sprite2x-image;
-    @include sprite-position($sprite);
-    @include sprite-width($sprite);
-    @include sprite-height($sprite);
-  }
+@mixin sprite($sprite) {
+  @extend %sprite2x-image;
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
 
-  $sprite2x-beachchair: 0px 0px 0px 0px 256px 256px 512px 512px '../images/sprite2x-1419585045847.png';
-  .sprite2x-beachchair {
-    @include sprite($sprite2x-beachchair);
-  }
-  $sprite2x-cocktail: 256px 0px -256px 0px 256px 256px 512px 512px '../images/sprite2x-1419585045847.png';
-  .sprite2x-cocktail {
-    @include sprite($sprite2x-cocktail);
-  }
-  $sprite2x-flip_flops: 0px 256px 0px -256px 256px 256px 512px 512px '../images/sprite2x-1419585045847.png';
-  .sprite2x-flip_flops {
-    @include sprite($sprite2x-flip_flops);
-  }
+$sprite2x-beachchair: 0px 0px 0px 0px 256px 256px 512px 512px '../images/sprite2x-1419683254499.png';
+.sprite2x-beachchair {
+  @include sprite($sprite2x-beachchair);
+}
+$sprite2x-cocktail: 256px 0px -256px 0px 256px 256px 512px 512px '../images/sprite2x-1419683254499.png';
+.sprite2x-cocktail {
+  @include sprite($sprite2x-cocktail);
+}
+$sprite2x-document: 256px 256px -256px -256px 128px 128px 512px 512px '../images/sprite2x-1419683254499.png';
+.sprite2x-document {
+  @include sprite($sprite2x-document);
+}
+$sprite2x-flip_flops: 0px 256px 0px -256px 256px 256px 512px 512px '../images/sprite2x-1419683254499.png';
+.sprite2x-flip_flops {
+  @include sprite($sprite2x-flip_flops);
+}
+$sprite2x-package: 384px 256px -384px -256px 128px 128px 512px 512px '../images/sprite2x-1419683254499.png';
+.sprite2x-package {
+  @include sprite($sprite2x-package);
+}

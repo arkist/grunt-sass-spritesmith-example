@@ -1,1 +1,0 @@
-all icons from -> http://www.visualpharm.com/

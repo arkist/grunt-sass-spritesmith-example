@@ -6,7 +6,7 @@
 
 ## 따라해보기
 
-1. [Node.js](http://nodejs.org) 환경을 갖춘다.
+1. [Node.js](http://nodejs.org) 환경을 갖춘다
 
 2. 프로젝트 폴더를 만들어 소스를 체크아웃 받고 폴더로 이동한다 
 
@@ -21,5 +21,6 @@ cd grunt-sass-spritesmith-example
 npm install
 ```
 
-4. `Gruntfile.js`를 참고하며 grunt task들을 테스트해본다.
+4. `Gruntfile.js`를 참고하며 grunt task들을 테스트 해본다
 
+`grunt dev`와 `grunt dist`의 차이는 완성되는 css 코드의 형태이다.

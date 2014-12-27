@@ -1,10 +1,10 @@
 body {
   background-color: #fff; }
 
-.sprite-beachchair, .sprite-cocktail, .sprite-flip_flops {
+.sprite-beachchair, .sprite-cocktail, .sprite-document, .sprite-flip_flops, .sprite-package {
   display: inline-block;
   vertical-align: middle;
-  background-image: url(../images/sprite-1419585045847.png);
+  background-image: url(../images/sprite-1419683254499.png);
   background-repeat: no-repeat; }
 
 .sprite-beachchair {
@@ -17,19 +17,28 @@ body {
   width: 256px;
   height: 256px; }
 
+.sprite-document {
+  background-position: -256px -256px;
+  width: 128px;
+  height: 128px; }
+
 .sprite-flip_flops {
   background-position: 0px -256px;
   width: 256px;
   height: 256px; }
 
-.sprite2x-beachchair, .sprite2x-cocktail, .sprite2x-flip_flops {
+.sprite-package {
+  background-position: -384px -256px;
+  width: 128px;
+  height: 128px; }
+
+.sprite2x-beachchair, .sprite2x-cocktail, .sprite2x-document, .sprite2x-flip_flops, .sprite2x-package {
   display: inline-block;
   vertical-align: middle;
-  background-image: url(../images/sprite2x-1419585045847.png);
+  background-image: url(../images/sprite2x-1419683254499.png);
   background-repeat: no-repeat;
   -webkit-background-size: 256px 256px;
   -moz-background-size: 256px 256px;
-  -o-background-size: 256px 256px;
   background-size: 256px 256px; }
 
 .sprite2x-beachchair {
@@ -42,10 +51,20 @@ body {
   width: 128px;
   height: 128px; }
 
+.sprite2x-document {
+  background-position: -128px -128px;
+  width: 64px;
+  height: 64px; }
+
 .sprite2x-flip_flops {
   background-position: 0px -128px;
   width: 128px;
   height: 128px; }
+
+.sprite2x-package {
+  background-position: -192px -128px;
+  width: 64px;
+  height: 64px; }
 
 .hello {
   background-color: #f00; }
