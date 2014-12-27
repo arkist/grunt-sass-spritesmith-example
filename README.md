@@ -8,6 +8,11 @@
 
 1. [Node.js](http://nodejs.org) 환경을 갖춘다
 
+2. [Grunt](http://gruntjs.com/) cli가 없다면 설치해주자
+    ```shell
+    npm install -g grunt-cli
+    ```
+
 2. 프로젝트 폴더를 만들어 소스를 체크아웃 받고 폴더로 이동한다 
 
     ```shell
