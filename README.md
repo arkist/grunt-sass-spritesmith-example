@@ -1,4 +1,4 @@
-# 'grunt-sass' & 'grunt-spritesmith' tutorial
+# 'grunt-sass' & 'grunt-spritesmith' example
 
 [grunt](http://gruntjs.com),
 [grunt-sass](http://github.com/sindresorhus/grunt-sass),
@@ -11,8 +11,8 @@
 2. 프로젝트 폴더를 만들어 소스를 체크아웃 받고 폴더로 이동한다 
 
 ```shell
-git clone https://github.com/arkist/grunt-sass-spritesmith-tutorial.git
-cd grunt-sass-spritesmith-tutorial
+git clone https://github.com/arkist/grunt-sass-spritesmith-example.git
+cd grunt-sass-spritesmith-example
 ```
 
 3. 필요한 모듈을 설치한다
